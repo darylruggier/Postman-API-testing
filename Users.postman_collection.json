@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "93b00ec2-7eb2-4251-8f44-498507262dea",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/user/get",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"user",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/user/create?username=demouser1&email=demouser@test.com&password=123456",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"user",
+						"create"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "demouser1"
+						},
+						{
+							"key": "email",
+							"value": "demouser@test.com"
+						},
+						{
+							"key": "password",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
