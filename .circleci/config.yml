@@ -8,4 +8,4 @@ jobs:
       - checkout
       - newman/newman-run:
           collection: ./Users.postman_collection.json
-          environment: ./My-Remote-API-Testing.postman_environment.json
+          environment: ./API-Testing.postman_environment.json
