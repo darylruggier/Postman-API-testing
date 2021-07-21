@@ -9,5 +9,5 @@ jobs:
       - newman/newman-run:
           collection: ./Users.postman_collection.json
           environment: ./API-Testing.postman_environment.json
-      - store_test_results:
-          path: test-results
+    - store_test_results:
+        path: ./test-results.txt
